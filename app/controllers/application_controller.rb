@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
 
  #サインイン後にどこに遷移するのか（devise側で用意されているメソッド)
   def after_sign_in_path_for(resource)
-    about_path
+    post_images_path
   end
 
  #ログアウト後にどこに遷移するのか（devise側で用意されているメソッド)
